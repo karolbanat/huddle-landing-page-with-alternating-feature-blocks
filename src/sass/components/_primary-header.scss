@@ -31,6 +31,9 @@
 		max-width: var(--max-width);
 		@include mxn.mq(medium) {
 			width: auto;
+			--max-width: min(50%, 68rem);
+		}
+		@include mxn.mq(large) {
 			--max-width: min(55%, 68rem);
 		}
 	}

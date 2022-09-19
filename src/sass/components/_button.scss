@@ -10,6 +10,10 @@
 	box-shadow: var(--shadow-button, none);
 	cursor: pointer;
 	transition: background-color 0.35s ease, color 0.35s ease, scale 0.35s ease;
+	/* exception for smaller screens */
+	@media only screen and (max-width: 20em) {
+		padding: 1.25em 2em;
+	}
 
 	&:hover,
 	&:focus {

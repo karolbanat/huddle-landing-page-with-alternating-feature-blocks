@@ -37,12 +37,6 @@
 		}
 	}
 
-	// &__header {
-	// 	@include mxn.mq(medium) {
-	// 		padding-left: ;
-	// 	}
-	// }
-
 	&__heading {
 		margin-bottom: 1.6rem;
 		font-size: var(--fz-600);
@@ -51,5 +45,9 @@
 	&__image {
 		--max-width: clamp(24.5rem, 40vw, 42rem);
 		max-width: var(--max-width);
+		/* exception for smaller screens */
+		@media only screen and (max-width: 20em) {
+			width: 75%;
+		}
 	}
 }
