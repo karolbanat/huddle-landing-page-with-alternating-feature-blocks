@@ -1,0 +1,47 @@
+@use '../abstracts/mixins' as mxn;
+
+.feature-block {
+	--padding-inline: 4rem;
+	--padding-block: 2.4rem 3.2rem;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: 2.4rem;
+	padding-block: var(--padding-block);
+	padding-inline: var(--padding-inline);
+	font-size: var(--fz-feature-block);
+	text-align: center;
+	border-radius: var(--borr-400);
+	box-shadow: var(--shadow-neutral);
+	@include mxn.mq(medium) {
+		--padding-block: 5.4rem;
+		text-align: initial;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: clamp(6.4rem, -2rem + 15vw, 15.5rem);
+
+		& > * {
+			flex: 1;
+		}
+
+		&[data-reversed] {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__header {
+		@include mxn.mq(medium) {
+			padding-left: clamp(2.4rem, -2rem + 7.5vw, 8rem);
+		}
+	}
+
+	&__heading {
+		margin-bottom: 1.6rem;
+		font-size: var(--fz-600);
+	}
+
+	&__image {
+		--max-width: clamp(24.5rem, 40vw, 42rem);
+		max-width: var(--max-width);
+	}
+}
