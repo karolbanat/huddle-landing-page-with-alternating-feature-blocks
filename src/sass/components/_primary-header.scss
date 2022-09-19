@@ -1,8 +1,15 @@
 @use '../abstracts/mixins' as mxn;
 
 .primary-header {
+	--bg-image: url('../images/bg-hero-mobile.svg');
 	padding-bottom: clamp(3.6rem, 7.5vw, 7.2rem);
 	background-color: var(--clr-neutral-200);
+	background-image: var(--bg-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include mxn.mq(medium) {
+		--bg-image: url('../images/bg-hero-desktop.svg');
+	}
 
 	&__content {
 		display: flex;
