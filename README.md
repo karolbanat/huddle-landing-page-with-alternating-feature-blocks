@@ -17,8 +17,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-EIi1PuPqEy)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/huddle-landing-page-with-alternating-feature-blocks/)
 
 ## Author
 
