@@ -1,0 +1,22 @@
+@use '../abstracts/mixins' as mxn;
+
+.address {
+	display: grid;
+	gap: 2.4rem;
+	@include mxn.mq(medium) {
+		gap: 1.6rem;
+	}
+
+	&__info {
+		display: flex;
+		align-items: flex-start;
+		font-style: normal;
+	}
+
+	&__icon {
+		--size: 2.4rem;
+		display: inline-block;
+		margin-right: 1.6rem;
+		min-width: var(--size);
+	}
+}

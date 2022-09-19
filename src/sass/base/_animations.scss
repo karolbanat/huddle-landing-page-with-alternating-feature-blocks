@@ -1,0 +1,25 @@
+@keyframes shake {
+	0% {
+		rotate: -10deg;
+		scale: 1.1;
+	}
+
+	25% {
+		rotate: 25deg;
+		scale: 1.1;
+	}
+
+	50% {
+		rotate: -25deg;
+		scale: 1.1;
+	}
+
+	75% {
+		rotate: 10deg;
+		scale: 1.1;
+	}
+
+	100% {
+		rotate: 0deg;
+	}
+}

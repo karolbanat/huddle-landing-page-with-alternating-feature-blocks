@@ -1,4 +1,13 @@
+@use '../abstracts/mixins' as mxn;
 .grid {
 	display: grid;
 	gap: var(--grid-spacer, 4rem);
+}
+
+.footer-grid {
+	display: grid;
+	gap: clamp(2.4rem, -2rem + 10vw, 10rem);
+	@include mxn.mq(medium) {
+		grid-template-columns: 1fr 1fr 0.65fr;
+	}
 }

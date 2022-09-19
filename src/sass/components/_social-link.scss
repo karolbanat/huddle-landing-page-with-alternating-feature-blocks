@@ -1,0 +1,21 @@
+@use '../base/animations';
+
+.social-link {
+	--size: 3.2rem;
+	display: inline-grid;
+	place-items: center;
+	width: var(--size);
+	aspect-ratio: 1;
+	font-size: var(--fz-400);
+	text-decoration: none;
+	color: var(--clr-social, var(--clr-neutral-100, inherit));
+	border: 1px solid var(--clr-social, var(--clr-neutral-100, inherit));
+	border-radius: 50%;
+	transition: color 0.35s ease, border-color 0.35s ease, scale 0.35s ease;
+
+	&:hover,
+	&:focus {
+		--clr-social: var(--clr-primary-400);
+		animation: shake 1s ease;
+	}
+}

@@ -9,12 +9,13 @@
 	border-radius: var(--borr-900);
 	box-shadow: var(--shadow-button, none);
 	cursor: pointer;
-	transition: background-color 0.35s ease, color 0.35s ease;
+	transition: background-color 0.35s ease, color 0.35s ease, scale 0.35s ease;
 
 	&:hover,
 	&:focus {
 		background-color: var(--bg-button-hover);
 		color: var(--text-button-hover);
+		scale: 0.9;
 	}
 
 	&--primary {

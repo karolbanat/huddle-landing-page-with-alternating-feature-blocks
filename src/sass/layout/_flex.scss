@@ -1,0 +1,5 @@
+.flex-align-center {
+	display: flex;
+	align-items: center;
+	gap: var(--flex-align-center-spacer, 1.2rem);
+}
