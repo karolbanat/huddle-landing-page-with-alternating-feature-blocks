@@ -4,18 +4,54 @@ $breakpoints: (
 	large: 62em,
 );
 
-$colors: ();
+$colors: (
+	primary: (
+		300: hsl(321 100% 80%),
+		400: hsl(322 100% 66%),
+	),
+	neutral: (
+		100: hsl(0 0% 100%),
+		200: hsl(193 100% 96%),
+		400: hsl(208 11% 55%),
+		700: hsl(192 100% 9%),
+	),
+);
 
 $font-sizes: (
-	small: (),
-	medium: (),
+	small: (
+		400: 1.6rem,
+		600: 2rem,
+		700: 2.4rem,
+		// exceptions
+		sm-button: 1rem,
+		md-button: 1.2rem,
+		lg-button: 1rem,
+		feature-block: 1.4rem,
+		cta-heading: 1.8rem,
+		footer: 1.4rem,
+		copyright: 1.2rem,
+	),
+	medium: (
+		400: 1.8rem,
+		600: 2.8rem,
+		700: 4rem,
+		// exceptions
+		sm-button: 1.4rem,
+		md-button: 1.4rem,
+		lg-button: 2rem,
+		feature-block: 1.8rem,
+		cta-heading: 3.2rem,
+	),
 );
 
-$font-weights: ();
-
-$border-radius: ();
-
-$spacings: (
-	em: (),
-	rem: (),
+$font-weights: (
+	400: 400,
+	600: 600,
+	700: 700,
 );
+
+$border-radius: (
+	400: 1.6rem,
+	900: 100vmax,
+);
+

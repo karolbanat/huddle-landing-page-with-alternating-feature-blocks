@@ -8,8 +8,13 @@
 			--clr-#{$color}-#{$shade}: #{$value};
 		}
 	}
+	// shadow
+	--shadow-primary: 0.2rem 0.3rem 0.6rem hsl(322 100% 66% / 0.16);
+	--shadow-neutral: 0 0.3rem 1.1rem hsl(0 0% 0% / 0.9);
 
 	// font families
+	--ff-primary: 'Open Sans', sans-serif;
+	--ff-heading: 'Poppins', sans-serif;
 
 	// font wieghts
 	@each $font-weight, $value in variables.$font-weights {
@@ -34,12 +39,5 @@
 	// border radius
 	@each $radius, $value in variables.$border-radius {
 		--borr-#{$radius}: #{$value};
-	}
-
-	// spacings
-	@each $unit, $sizes in variables.$spacings {
-		@each $size, $value in $sizes {
-			--spacing-#{$unit}-#{$size}: #{$value};
-		}
 	}
 }
