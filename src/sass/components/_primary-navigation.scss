@@ -1,0 +1,7 @@
+.primary-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: clamp(2.8rem, 1rem + 5vw, 6.8rem);
+	margin-bottom: clamp(6.8rem, 10rem - 5vw, 8rem);
+}

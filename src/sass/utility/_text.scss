@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as mxn;
+
+.text-center {
+	text-align: center;
+
+	&--sm {
+		@include mxn.mq(medium) {
+			text-align: initial;
+		}
+	}
+}

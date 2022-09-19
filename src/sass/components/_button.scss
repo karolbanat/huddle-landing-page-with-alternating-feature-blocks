@@ -1,0 +1,47 @@
+.button {
+	display: inline-block;
+	padding: 1.25em 5em;
+	text-decoration: none;
+	font-size: var(--fz-button, inherit);
+	font-weight: var(--fw-700);
+	color: var(--text-button);
+	background-color: var(--bg-button);
+	border-radius: var(--borr-900);
+	box-shadow: var(--shadow-button, none);
+	cursor: pointer;
+	transition: background-color 0.35s ease, color 0.35s ease;
+
+	&:hover,
+	&:focus {
+		background-color: var(--bg-button-hover);
+		color: var(--text-button-hover);
+	}
+
+	&--primary {
+		--text-button: var(--clr-neutral-100);
+		--text-button-hover: var(--clr-neutral-100);
+		--bg-button: var(--clr-primary-400);
+		--bg-button-hover: var(--clr-primary-300);
+		--shadow-button: var(--shadow-primary);
+	}
+
+	&--white {
+		--text-button: var(--clr-neutral-400);
+		--text-button: var(--clr-neutral-700);
+		--bg-button: var(--clr-neutral-100);
+		--bg-button-hover: var(--clr-neutral-100);
+		--shadow-button: var(--shadow-neutral);
+	}
+
+	&--small {
+		--fz-button: var(--fz-sm-button);
+	}
+
+	&--medium {
+		--fz-button: var(--fz-md-button);
+	}
+
+	&--large {
+		--fz-button: var(--fz-lg-button);
+	}
+}
